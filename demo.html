@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+        *{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;}
+        body{font:12px/180% Arial, Helvetica, sans-serif,"新宋体";}
+        /* focus_Box */
+        #focus_Box{position:relative;width:710px;height:308px;margin:20px auto;z-index: 1000}
+        #focus_Box ul{position:relative;width:710px;height:308px}
+        #focus_Box li{z-index:0;position:absolute; width:0px;background:#787878;height:0px;top:146px;cursor:pointer;left:377px;border-radius:4px;box-shadow:1px 1px 12px rgba(200, 200, 200, 1)}
+        #focus_Box li img{width:100%;height:100%;vertical-align:top}
+        #focus_Box .prev,#focus_Box .next{display:block;z-index:100;overflow:hidden;cursor:pointer;position:absolute;width:52px;height:52px;top:131px;}
+        #focus_Box .prev{background:url(images/btn.png) left bottom no-repeat;left:0px}
+        #focus_Box .next{background:url(images/btn.png) right bottom no-repeat;right:0px}
+        #focus_Box .prev:hover{background-position:left top;}
+        #focus_Box .next:hover{background-position:right top;}
+    </style>
+
+</head>
+<body>
+
+<div id="focus_Box">
+    <span class="prev">&nbsp;</span>
+    <span class="next">&nbsp;</span>
+    <ul>
+        <li>
+            <a href="#">
+                <img width="445" height="308" src="images/1.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img width="445" height="308"  src="images/2.jpg"/>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img width="445" height="308"  src="images/3.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img width="445" height="308" src="images/4.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img width="445" height="308"  src="images/5.jpg" />
+            </a>
+        </li>
+    </ul>
+</div>
+<div style="text-align:center;clear:both">
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/3dCarousel.js"></script>
+</body>
+</html>
